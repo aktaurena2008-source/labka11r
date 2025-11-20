@@ -1,24 +1,24 @@
 body {
-    font-family: 'Segoe UI', Tahoma, sans-serif;
-    background: #f4f7f8;
-    color: #333;
     margin: 0;
+    background: #f4f7f8;
+    font-family: Arial, sans-serif;
+    color: #333;
 }
 
-/* Навигация */
+/* Menu */
 nav {
     position: fixed;
     top: 0;
     width: 100%;
     background: #fff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
     z-index: 10;
 }
 
 nav ul {
-    list-style: none;
     margin: 0;
     padding: 12px 0;
+    list-style: none;
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -26,75 +26,69 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: #2980b9;
+    color: #2d81c0;
     font-weight: bold;
 }
 
 nav a:hover {
-    color: #1f618d;
+    color: #1f5e8d;
 }
 
-/* Контейнер */
+/* Box */
 .container {
     max-width: 900px;
     background: #fff;
     margin: 100px auto;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
 }
 
 h1 {
     text-align: center;
-    color: #2c3e50;
-}
-
-h2 {
-    color: #2980b9;
-    border-bottom: 2px solid #2980b9;
-    padding-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 /* About */
-.about-content {
+.about-box {
     display: flex;
     gap: 20px;
     align-items: center;
 }
 
-.profile-photo {
+.photo {
     width: 180px;
     height: 180px;
     border-radius: 50%;
     object-fit: cover;
 }
 
-/* Кесте */
+/* Table */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px 0;
+    margin-top: 15px;
 }
 
-table th {
+th {
     background: #2980b9;
-    color: #fff;
+    color: white;
     padding: 10px;
 }
 
-table td {
+td {
     border: 1px solid #ccc;
     padding: 10px;
 }
 
-/* Форма */
+/* Form */
 form input,
 form textarea {
     width: 100%;
     padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
+    border: 1px solid #bbb;
+    margin-bottom: 12px;
+    border-radius: 5px;
 }
 
 form button {
@@ -102,36 +96,33 @@ form button {
     color: white;
     border: none;
     padding: 10px 25px;
-    border-radius: 6px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
 form button:hover {
-    background: #1f618d;
+    background: #1f5e8d;
 }
 
-/* Back to Top */
-#backToTop {
+/* Button */
+#topBtn {
     position: fixed;
-    bottom: 30px;
-    right: 30px;
+    bottom: 25px;
+    right: 25px;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    border: none;
     background: #2980b9;
     color: #fff;
-    border: none;
-    padding: 12px;
-    font-size: 20px;
     border-radius: 50%;
     display: none;
     cursor: pointer;
 }
 
-#backToTop:hover {
-    background: #1f618d;
-}
-
-/* Футер */
+/* Footer */
 footer {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 30px;
     color: #666;
 }
