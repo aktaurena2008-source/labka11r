@@ -1,118 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <title>My Future CV</title>
-    <link rel="stylesheet" href="style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
+    <!-- Жоғарғы меню -->
     <nav>
         <ul>
-            <li><a href="#about">About Me</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#career">Career</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#exp">Experience</a></li>
+            <li><a href="#proj">Projects</a></li>
+            <li><a href="#cont">Contact</a></li>
         </ul>
     </nav>
 
     <div class="container">
-        <main>
-            <h1>My Future (Age 60)</h1>
-            <hr />
+        
+        <h1>My Future (Age 60)</h1>
 
-            <section id="about">
-                <h2>About Me</h2>
-                <div class="about-content">
-                    <img src="images.jpeg" alt="My Future Photo" class="profile-photo" />
-                    <p>Hello! My name is <strong>Rinat</strong>. I am a professional
-                    <em>Software Architect</em> with 40+ years of experience in IT.</p>
-                </div>
-            </section>
+        <!-- About -->
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-box">
+                <img class="photo" src="images.jpeg" alt="photo">
+                <p>
+                    Hello! My name is <b>Rinat</b>. I work in IT and have many years of experience.
+                    I like programming and creating useful software.
+                </p>
+            </div>
+        </section>
 
-            <section id="career">
-                <h2>Career Achievements</h2>
-                <ul>
-                    <li>Worked at Google as AI Architect</li>
-                    <li>Founded my own tech company</li>
-                    <li>Wrote 10+ books about AI</li>
-                    <li>Developed award-winning technologies</li>
-                </ul>
-            </section>
+        <!-- Career -->
+        <section id="career">
+            <h2>Career Achievements</h2>
+            <ul class="list">
+                <li>Worked at Google</li>
+                <li>Opened my own IT company</li>
+                <li>Published several books</li>
+                <li>Created AI projects</li>
+            </ul>
+        </section>
 
-            <section id="experience">
-                <h2>Work Experience</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Years</th>
-                            <th>Position</th>
-                            <th>Company</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>2030–2035</td>
-                            <td>Senior Developer</td>
-                            <td>Microsoft</td>
-                        </tr>
-                        <tr>
-                            <td>2036–2050</td>
-                            <td>AI Architect</td>
-                            <td>Google</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
+        <!-- Experience -->
+        <section id="exp">
+            <h2>Work Experience</h2>
+            <table>
+                <tr>
+                    <th>Years</th>
+                    <th>Position</th>
+                    <th>Company</th>
+                </tr>
+                <tr>
+                    <td>2030–2035</td>
+                    <td>Senior Developer</td>
+                    <td>Microsoft</td>
+                </tr>
+                <tr>
+                    <td>2036–2050</td>
+                    <td>AI Architect</td>
+                    <td>Google</td>
+                </tr>
+            </table>
+        </section>
 
-            <section id="projects">
-                <h2>Projects</h2>
-                <ol>
-                    <li>
-                        <h3>AI Drone Navigation</h3>
-                        <p>Autonomous drone navigation system.</p>
-                    </li>
-                    <li>
-                        <h3>Medical AI Diagnosis</h3>
-                        <p>AI software for medical diagnosis support.</p>
-                    </li>
-                    <li>
-                        <h3>Smart City Automation</h3>
-                        <p>IoT solutions for smart cities.</p>
-                    </li>
-                </ol>
-            </section>
+        <!-- Projects -->
+        <section id="proj">
+            <h2>Projects</h2>
+            <ol>
+                <li>
+                    <h3>AI Drone Navigation</h3>
+                    <p>Drone system that moves without human control.</p>
+                </li>
+                <li>
+                    <h3>Medical AI Diagnosis</h3>
+                    <p>AI that helps doctors check illnesses.</p>
+                </li>
+                <li>
+                    <h3>Smart City Automation</h3>
+                    <p>Tech for modern city systems.</p>
+                </li>
+            </ol>
+        </section>
 
-            <aside>
-                <h2>Additional Info</h2>
-                <p><mark>Note:</mark> Open to consulting and mentoring.</p>
-            </aside>
+        <!-- Contact -->
+        <section id="cont">
+            <h2>Contact Me</h2>
 
-            <section id="contact">
-                <h2>Contact Me</h2>
-                <form>
-                    <label>Your Name:</label>
-                    <input type="text" required />
+            <form>
+                <label>Your Name</label>
+                <input type="text">
 
-                    <label>Your Email:</label>
-                    <input type="email" required />
+                <label>Email</label>
+                <input type="email">
 
-                    <label>Message:</label>
-                    <textarea rows="5" required></textarea>
+                <label>Message</label>
+                <textarea rows="4"></textarea>
 
-                    <button type="submit">Send</button>
-                </form>
-            </section>
-        </main>
+                <button type="submit">Send</button>
+            </form>
+        </section>
 
         <footer>
-            <p>&copy; 2050 Rinat Turkmenbai — All Rights Reserved</p>
+            <p>©2050 Rinat — All rights reserved</p>
         </footer>
+
     </div>
 
-    <button id="backToTop">↑</button>
+    <button id="topBtn">↑</button>
 
 </body>
 </html>
