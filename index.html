@@ -5,27 +5,20 @@
     <title>My Future CV</title>
     <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
-<link rel="manifest" href="./img/site.webmanifest">
 </head>
 <body>
 
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#career">Career</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
     <div class="container">
-
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#career">Career</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-
         <main>
             <h1>My Future (Age 60)</h1>
             <hr />
@@ -33,10 +26,7 @@
             <section id="about">
                 <h2>About Me</h2>
                 <div class="about-content">
-                    <figure>
-                        <img src="images.jpeg" alt="My Future Photo" class="profile-photo" />
-                        <figcaption>This is me at age 60</figcaption>
-                    </figure>
+                    <img src="images.jpeg" alt="My Future Photo" class="profile-photo" />
                     <p>Hello! My name is <strong>Rinat</strong>. I am a professional
                     <em>Software Architect</em> with 40+ years of experience in IT.</p>
                 </div>
@@ -64,12 +54,12 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td><time datetime="2030-01-01">2030–2035</time></td>
+                            <td>2030–2035</td>
                             <td>Senior Developer</td>
                             <td>Microsoft</td>
                         </tr>
                         <tr>
-                            <td><time datetime="2036-01-01">2036–2050</time></td>
+                            <td>2036–2050</td>
                             <td>AI Architect</td>
                             <td>Google</td>
                         </tr>
@@ -81,58 +71,48 @@
                 <h2>Projects</h2>
                 <ol>
                     <li>
-                        <article>
-                            <h3>AI Drone Navigation</h3>
-                            <p>Developed an autonomous drone navigation system.</p>
-                            <time datetime="2040">Completed in 2040</time>
-                        </article>
+                        <h3>AI Drone Navigation</h3>
+                        <p>Autonomous drone navigation system.</p>
                     </li>
                     <li>
-                        <article>
-                            <h3>Medical AI Diagnosis</h3>
-                            <p>Created AI software to assist doctors in diagnosis.</p>
-                            <time datetime="2045">Completed in 2045</time>
-                        </article>
+                        <h3>Medical AI Diagnosis</h3>
+                        <p>AI software for medical diagnosis support.</p>
                     </li>
                     <li>
-                        <article>
-                            <h3>Smart City Automation</h3>
-                            <p>Implemented IoT solutions for smart city infrastructure.</p>
-                            <time datetime="2050">Completed in 2050</time>
-                        </article>
+                        <h3>Smart City Automation</h3>
+                        <p>IoT solutions for smart cities.</p>
                     </li>
                 </ol>
             </section>
 
             <aside>
                 <h2>Additional Info</h2>
-                <p><mark>Note:</mark> I am open to consulting opportunities and mentoring young professionals.</p>
+                <p><mark>Note:</mark> Open to consulting and mentoring.</p>
             </aside>
 
             <section id="contact">
                 <h2>Contact Me</h2>
                 <form>
-                    <label for="name">Your Name:</label><br />
-                    <input type="text" id="name" name="name" required /><br /><br />
+                    <label>Your Name:</label>
+                    <input type="text" required />
 
-                    <label for="email">Your Email:</label><br />
-                    <input type="email" id="email" name="email" required /><br /><br />
+                    <label>Your Email:</label>
+                    <input type="email" required />
 
-                    <label for="message">Message:</label><br />
-                    <textarea id="message" name="message" rows="5" required></textarea><br /><br />
+                    <label>Message:</label>
+                    <textarea rows="5" required></textarea>
 
                     <button type="submit">Send</button>
                 </form>
             </section>
         </main>
 
-        <button id="backToTop" title="Back to Top">↑</button>
-
         <footer>
             <p>&copy; 2050 Rinat Turkmenbai — All Rights Reserved</p>
         </footer>
-
     </div>
+
+    <button id="backToTop">↑</button>
 
 </body>
 </html>
